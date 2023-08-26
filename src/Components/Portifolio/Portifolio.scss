@@ -49,3 +49,155 @@ root {
     }
   }
 }
+
+// Media Queries
+@media screen and (min-width: 480px) {
+  .portifolio {
+    .secContainer {
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: var(--h2FontSize);
+          }
+          p {
+            font-size: var(--normalFontSize);
+            padding: 0.5rem 0;
+          }
+        }
+        .grid {
+          .singlePortifolio {
+            gap: 1.5rem;
+            .iconDiv {
+              img {
+                height: 60px;
+                width: 60px;
+              }
+            }
+            .infoPort {
+              h4 {
+                padding-bottom: 0.5rem;
+                font-size: var(--h3FontSize);
+              }
+              p {
+                font-size: var(--normalFontSize);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .portifolio {
+    .secContainer {
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: var(--h3FontSize);
+          }
+        }
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+          .singlePortifolio {
+            gap: 1.5rem;
+          }
+        }
+      }
+      .rightContent {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          margin: auto;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portifolio {
+    .secContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: var(--h2FontSize);
+          }
+          p {
+            font-size: var(--h3FontSize);
+          }
+        }
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+          .singlePortifolio {
+            gap: 2rem;
+            .iconDiv {
+              img {
+                height: 70px;
+                width: 70px;
+              }
+            }
+            .infoPort {
+              h4 {
+                padding-bottom: 0.5rem;
+                font-size: var(--h2FontSize);
+              }
+              p {
+                font-size: var(--h3FontSize);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portifolio {
+    .secContainer {
+      gap: 3rem;
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: var(--h1FontSize);
+          }
+          p {
+            font-size: var(--h3FontSize);
+          }
+        }
+        .grid {
+          gap: 2.5rem;
+          margin-top: 2rem;
+          .singlePortifolio {
+            gap: 2.5rem;
+            .iconDiv {
+              img {
+                height: 80px;
+                width: 80px;
+              }
+            }
+            .infoPort {
+              h4 {
+                padding-bottom: 1rem;
+                font-size: var(--h1FontSize);
+              }
+              p {
+                font-size: var(--h2FontSize);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

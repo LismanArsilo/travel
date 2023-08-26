@@ -124,7 +124,7 @@
   .home .popularPlaces {
     display: block;
     position: absolute;
-    bottom: 10%;
+    bottom: 6%;
     width: 100%;
     display: flex;
     align-items: center;

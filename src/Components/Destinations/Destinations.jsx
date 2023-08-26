@@ -76,7 +76,7 @@ const Destinations = () => {
   return (
     <div className="destination section container">
       <div className="secContainer">
-        <div className="">
+        <div className="secTitle">
           <span className="redText">EXPLORE NOW</span>
           <h3>Find Your Dream Destination</h3>
           <p>
@@ -96,11 +96,11 @@ const Destinations = () => {
             <BsFillCalendarDateFill className="icon" />
             <input type="text" placeholder="Date" />
           </div>
-
           <button className="btn flex">
             <BiSearchAlt className="icon" /> Search
           </button>
         </div>
+
         <div className="secMenu">
           <ul className="flex">
             <li className="active">All</li>
