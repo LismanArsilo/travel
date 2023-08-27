@@ -91,4 +91,87 @@ root {
 .formQuestion .form .formContent textarea {
   height: 100%;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .accordionContainer .accorTitle {
+    font-size: var(--h3FontSize);
+  }
+  .accordionContainer .accorTitle span .icon {
+    font-size: 1.5rem;
+  }
+  .accordionContainer .accorDescription {
+    font-size: var(--normalFontSize);
+  }
+  .accordionContainer .show {
+    height: 150px;
+  }
+  .formQuestion .secHeading h3,
+  .formQuestion .secHeading h4 {
+    font-size: var(--h2FontSize);
+  }
+  .formQuestion .secHeading p {
+    font-size: var(--normalFontSize);
+  }
+  .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .secContainer .formQuestion .form .formContent input,
+  .secContainer .formQuestion .form .formContent textarea {
+    font-size: var(--normalFontSize);
+  }
+  .secContainer .formQuestion .form .formContent input::-moz-placeholder, .secContainer .formQuestion .form .formContent textarea::-moz-placeholder {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .secContainer .formQuestion .form .formContent input::placeholder,
+  .secContainer .formQuestion .form .formContent textarea::placeholder {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .secContainer .formQuestion .form .formContent textarea {
+    border-radius: 0.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .accordionContainer .accorTitle {
+    font-size: var(--h3FontSize);
+  }
+  .accordionContainer .accorTitle span .icon {
+    font-size: 1.9rem;
+  }
+  .accordionContainer .accorDescription {
+    font-size: var(--normalFontSize);
+  }
+  .accordionContainer .show {
+    height: 150px;
+  }
+  .formQuestion .secHeading h3,
+  .formQuestion .secHeading h4 {
+    font-size: 1.5rem;
+  }
+  .formQuestion .secHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .secContainer {
+    gap: 3rem;
+  }
+  .secContainer .formQuestion .form .formContent input,
+  .secContainer .formQuestion .form .formContent textarea {
+    font-size: var(--normalFontSize);
+  }
+  .secContainer .formQuestion .form .formContent input::-moz-placeholder, .secContainer .formQuestion .form .formContent textarea::-moz-placeholder {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .secContainer .formQuestion .form .formContent input::placeholder,
+  .secContainer .formQuestion .form .formContent textarea::placeholder {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .secContainer .formQuestion .form .formContent textarea {
+    border-radius: 0.8rem;
+  }
 }/*# sourceMappingURL=Questions.css.map */

@@ -3,7 +3,9 @@ import Accordion from "./Accordion";
 import { useState } from "react";
 
 const Questions = () => {
-  const [active, setActive] = useState("title2");
+  const [active, setActive] = useState(
+    "How do i choose the right travel destination for me ?"
+  );
   return (
     <div className="question section container">
       <div className="secHeading">

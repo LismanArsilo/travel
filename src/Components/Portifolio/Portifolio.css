@@ -136,6 +136,6 @@ root {
     font-size: var(--h1FontSize);
   }
   .portifolio .secContainer .leftContent .grid .singlePortifolio .infoPort p {
-    font-size: var(--h2FontSize);
+    font-size: var(--h3FontSize);
   }
 }/*# sourceMappingURL=Portifolio.css.map */

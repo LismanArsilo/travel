@@ -99,3 +99,112 @@ root {
     }
   }
 }
+
+// Media Queries
+@media screen and (min-width: 480px) {
+  .accordionContainer {
+    .accorTitle {
+      font-size: var(--h3FontSize);
+
+      span {
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .accorDescription {
+      font-size: var(--normalFontSize);
+    }
+
+    .show {
+      height: 150px;
+    }
+  }
+  .formQuestion {
+    .secHeading {
+      h3,
+      h4 {
+        font-size: var(--h2FontSize);
+      }
+      p {
+        font-size: var(--normalFontSize);
+      }
+    }
+  }
+  .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+    .formQuestion {
+      .form {
+        .formContent {
+          input,
+          textarea {
+            font-size: var(--normalFontSize);
+            &::placeholder {
+              font-size: var(--normalFontSize);
+              color: var(--blackColor);
+            }
+          }
+
+          textarea {
+            border-radius: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordionContainer {
+    .accorTitle {
+      font-size: var(--h3FontSize);
+
+      span {
+        .icon {
+          font-size: 1.9rem;
+        }
+      }
+    }
+    .accorDescription {
+      font-size: var(--normalFontSize);
+    }
+
+    .show {
+      height: 150px;
+    }
+  }
+  .formQuestion {
+    .secHeading {
+      h3,
+      h4 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: var(--h3FontSize);
+      }
+    }
+  }
+  .secContainer {
+    gap: 3rem;
+    .formQuestion {
+      .form {
+        .formContent {
+          input,
+          textarea {
+            font-size: var(--normalFontSize);
+            &::placeholder {
+              font-size: var(--normalFontSize);
+              color: var(--blackColor);
+            }
+          }
+
+          textarea {
+            border-radius: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

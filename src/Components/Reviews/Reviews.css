@@ -64,4 +64,87 @@ root {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .review .secContainer .textDiv .redText {
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: 20px;
+    color: var(--blackColor);
+  }
+  .review .secContainer .textDiv p {
+    color: var(--blackColor);
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv .stars {
+    gap: 0.5rem;
+    padding: 1.1rem 0;
+  }
+  .review .secContainer .textDiv .stars .icon {
+    font-size: var(--h2FontSize);
+  }
+  .review .secContainer .textDiv .clientImages img {
+    height: 50px;
+    width: 50px;
+  }
+  .review .secContainer .imgDiv {
+    height: 250px;
+    width: 100%;
+  }
+  .review .secContainer .imgDiv img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .review .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: 23px;
+  }
+  .review .secContainer .textDiv p {
+    font-size: var(--normalFontSize);
+  }
+  .review .secContainer .textDiv .stars .icon {
+    font-size: var(--h2FontSize);
+  }
+  .review .secContainer .textDiv .clientImages img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (min-width: 1024) {
+  .review .secContainer {
+    gap: 3rem;
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: var(--h3FontSize);
+  }
+  .review .secContainer .textDiv h3 {
+    font-size: 25px;
+  }
+  .review .secContainer .textDiv p {
+    font-size: var(--h3FontSize);
+    line-height: 1.7rem;
+  }
+  .review .secContainer .textDiv .stars {
+    gap: 0.7rem;
+    padding: 1.2rem 0;
+  }
+  .review .secContainer .textDiv .stars .icon {
+    font-size: var(--h2FontSize);
+  }
+  .review .secContainer .textDiv .clientImages img {
+    height: 55px;
+    width: 55px;
+  }
+  .review .secContainer .textDiv .imgDiv {
+    height: 300px;
+  }
 }/*# sourceMappingURL=Reviews.css.map */
