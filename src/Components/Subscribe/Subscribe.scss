@@ -40,3 +40,76 @@ root {
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .subscribe {
+    .secContainer {
+      img {
+        max-width: 75%;
+        margin: auto;
+      }
+      .textSub {
+        h4 {
+          font-size: 1.5rem;
+        }
+        p {
+          padding: 1rem 0;
+          font-size: var(--h3FontSize);
+        }
+        .btn {
+          padding: 0.5rem 2rem;
+          font-size: var(--h2FontSize);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    .secContainer {
+      img {
+        max-width: 85%;
+        margin: auto;
+      }
+      .textSub {
+        h4 {
+          font-size: 1.8rem;
+        }
+        p {
+          padding: 1rem 0;
+          font-size: var(--h2FontSize);
+        }
+        .btn {
+          padding: 0.6rem 2rem;
+          font-size: var(--h2FontSize);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .subscribe {
+    .secContainer {
+      img {
+        max-width: 95%;
+        margin: auto;
+        margin-right: 20px;
+      }
+      .textSub {
+        h4 {
+          font-size: 1.9rem;
+        }
+        p {
+          padding: 1rem 0;
+          font-size: var(--h2FontSize);
+        }
+        .btn {
+          padding: 0.8rem 2rem;
+          font-size: var(--h1FontSize);
+        }
+      }
+    }
+  }
+}

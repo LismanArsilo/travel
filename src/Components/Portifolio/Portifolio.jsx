@@ -1,8 +1,11 @@
 import "./Portifolio.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import IconHealty from "../../assets/icon-healty.png";
 import IconHealty1 from "../../assets/icon-healty.png";
 import IconHealty2 from "../../assets/icon-healty.png";
 import imagePeople from "../../assets/image-people.jpg";
+import { useEffect } from "react";
 
 const icons = [
   {
@@ -26,13 +29,17 @@ const icons = [
 ];
 
 const Portifolio = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="portifolio section container">
       <div className="secContainer">
         <div className="leftContent">
           <div className="secHeading">
-            <h3>Why Should You choose Us</h3>
-            <p>
+            <h3 data-aos="fade-up">Why Should You choose Us</h3>
+            <p data-aos="fade-up">
               We have extensive knowledge and experience in the travel industry
             </p>
           </div>
@@ -41,10 +48,10 @@ const Portifolio = () => {
             {icons.map((icon) => {
               return (
                 <div className="singlePortifolio flex" key={icon.id}>
-                  <div className="iconDiv">
+                  <div className="iconDiv" data-aos="fade-right">
                     <img src={icon.png} alt={icon.title} />
                   </div>
-                  <div className="infoPort">
+                  <div className="infoPort" data-aos="fade-left">
                     <h4>{icon.title}</h4>
                     <p>{icon.desc}</p>
                   </div>
@@ -53,7 +60,7 @@ const Portifolio = () => {
             })}
           </div>
         </div>
-        <div className="rightContent">
+        <div className="rightContent" data-aos="fade-up-left">
           <img src={imagePeople} alt="Image People" />
         </div>
       </div>

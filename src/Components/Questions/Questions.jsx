@@ -1,19 +1,26 @@
 import "./Questions.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Accordion from "./Accordion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Questions = () => {
   const [active, setActive] = useState(
     "How do i choose the right travel destination for me ?"
   );
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="question section container">
       <div className="secHeading">
-        <h3>Frequently Asked Questions</h3>
+        <h3 data-aos="fade-up">Frequently Asked Questions</h3>
       </div>
       <div className="secContainer grid">
         {/* We Will Import a Component from a different file*/}
-        <div className="accordion grid">
+        <div className="accordion grid" data-aos="fade-up">
           <Accordion
             title="How do i choose the right travel destination for me ?"
             desc="Consider your interests, budget, desired experiences, and the type of
@@ -45,14 +52,14 @@ const Questions = () => {
 
         <div className="formQuestion">
           <div className="secHeading">
-            <h4>Do you have any specific question ?</h4>
-            <p>
+            <h4 data-aos="fade-down">Do you have any specific question ?</h4>
+            <p data-aos="fade-down">
               Please fill the form below and our dedicated team will get intouch
               with you as soon as possible.
             </p>
           </div>
           <form className="form">
-            <div className="formContent grid">
+            <div className="formContent grid" data-aos="fade-down">
               <input type="email" placeholder="Enter email address" />
               <textarea
                 placeholder="Enter your question here"
