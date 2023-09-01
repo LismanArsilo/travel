@@ -34,8 +34,8 @@ const Portifolio = () => {
   }, []);
 
   return (
-    <div className="portifolio section container">
-      <div className="secContainer">
+    <div className="portifolio section ">
+      <div className="secContainer container">
         <div className="leftContent">
           <div className="secHeading">
             <h3 data-aos="fade-up">Why Should You choose Us</h3>
@@ -48,10 +48,10 @@ const Portifolio = () => {
             {icons.map((icon) => {
               return (
                 <div className="singlePortifolio flex" key={icon.id}>
-                  <div className="iconDiv" data-aos="fade-right">
+                  <div className="iconDiv" data-aos="fade-up">
                     <img src={icon.png} alt={icon.title} />
                   </div>
-                  <div className="infoPort" data-aos="fade-left">
+                  <div className="infoPort" data-aos="fade-up">
                     <h4>{icon.title}</h4>
                     <p>{icon.desc}</p>
                   </div>
@@ -60,7 +60,7 @@ const Portifolio = () => {
             })}
           </div>
         </div>
-        <div className="rightContent" data-aos="fade-up-left">
+        <div className="rightContent" data-aos="fade-up">
           <img src={imagePeople} alt="Image People" />
         </div>
       </div>

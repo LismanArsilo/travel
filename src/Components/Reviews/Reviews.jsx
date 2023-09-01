@@ -11,8 +11,8 @@ const Reviews = () => {
     Aos.init({ duration: 2000 });
   });
   return (
-    <div className="review section container">
-      <div className="secContainer grid">
+    <div className="review section ">
+      <div className="secContainer grid container">
         <div className="textDiv">
           <span className="redText" data-aos="fade-up">
             FROM OUR CLIENTS

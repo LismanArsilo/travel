@@ -24,18 +24,19 @@ root {
 
 .portifolio {
   .secContainer {
-    gap: 2rem;
+    display: grid;
+    gap: 1.8rem;
 
     .leftContent {
       .grid {
         .singlePortifolio {
           gap: 1rem;
-          align-items: flex-start;
+          align-items: center;
 
           .iconDiv {
             img {
-              height: 50px;
-              width: 50px;
+              height: 30px;
+              width: 30px;
             }
           }
 
@@ -47,6 +48,14 @@ root {
         }
       }
     }
+    .rightContent {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 18rem;
+        width: 20rem;
+      }
+    }
   }
 }
 
@@ -54,7 +63,7 @@ root {
 @media screen and (min-width: 480px) {
   .portifolio {
     .secContainer {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       .leftContent {
         .secHeading {
           h3 {
@@ -86,11 +95,16 @@ root {
           }
         }
       }
+      .rightContent {
+        img {
+          width: 75%;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .portifolio {
     .secContainer {
       .leftContent {
@@ -103,7 +117,7 @@ root {
           }
         }
         .grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
           .singlePortifolio {
             gap: 1.5rem;
           }
@@ -115,8 +129,7 @@ root {
         align-items: center;
         justify-content: center;
         img {
-          margin: auto;
-          max-width: 80%;
+          width: 75%;
         }
       }
     }
@@ -157,6 +170,14 @@ root {
               }
             }
           }
+        }
+      }
+      .rightContent {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 70%;
+          height: 75%;
         }
       }
     }

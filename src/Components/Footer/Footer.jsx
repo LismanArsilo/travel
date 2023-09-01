@@ -12,8 +12,8 @@ const Footer = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="footer">
-      <div className="secContainer container grid footerContainer">
+    <div className="footer section container">
+      <div className="secContainer grid footerContainer">
         <div className="logoDiv" data-aos="fade-up">
           <div className="logoFooter">
             <BiLogoMediumOld className="icon" />

@@ -9,8 +9,8 @@ const Subscribe = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="subscribe section container">
-      <div className="secContainer grid">
+    <div className="subscribe section">
+      <div className="secContainer grid container">
         <img src={PeopleSubscribe} alt="" data-aos="fade-up" />
         <div className="textSub">
           <h4 data-aos="fade-down">Best Way To Start Your Journey!</h4>

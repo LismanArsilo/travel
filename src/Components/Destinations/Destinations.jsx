@@ -80,8 +80,8 @@ const Destinations = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="destination section container">
-      <div className="secContainer">
+    <div className="destination section ">
+      <div className="secContainer container">
         <div className="secTitle">
           <span className="redText" data-aos="fade-up">
             EXPLORE NOW

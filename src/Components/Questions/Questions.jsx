@@ -15,10 +15,10 @@ const Questions = () => {
 
   return (
     <div className="question section container">
-      <div className="secHeading">
+      <div className="secHeading container">
         <h3 data-aos="fade-up">Frequently Asked Questions</h3>
       </div>
-      <div className="secContainer grid">
+      <div className="secContainer grid container">
         {/* We Will Import a Component from a different file*/}
         <div className="accordion grid" data-aos="fade-up">
           <Accordion

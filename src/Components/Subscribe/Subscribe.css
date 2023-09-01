@@ -45,7 +45,7 @@ root {
   }
   .subscribe .secContainer .textSub .btn {
     padding: 0.5rem 2rem;
-    font-size: var(--h2FontSize);
+    font-size: var(--h3FontSize);
   }
 }
 @media screen and (min-width: 768px) {
@@ -62,7 +62,7 @@ root {
   }
   .subscribe .secContainer .textSub .btn {
     padding: 0.6rem 2rem;
-    font-size: var(--h2FontSize);
+    font-size: var(--h3FontSize);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -80,6 +80,6 @@ root {
   }
   .subscribe .secContainer .textSub .btn {
     padding: 0.8rem 2rem;
-    font-size: var(--h1FontSize);
+    font-size: var(--h3FontSize);
   }
 }/*# sourceMappingURL=Subscribe.css.map */
